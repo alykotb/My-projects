@@ -44,7 +44,7 @@ UserID::MovieID::Rating::Timestamp
 GET STARTED
 ===========
 
- -Run in python environment installed on a machine
+-Run in python environment installed on a machine
 
    If you are using a python environmnet running on your machine not google-colab these libraries should be installed:
 
@@ -71,18 +71,15 @@ This video - https://www.youtube.com/watch?v=hAvJN82ulg8 - explains how to uploa
 and access it in Google Colab.Then you can run the code normally in the Colab notebook.
 
 
+-Calculating a recommendation list for a user:
 
- -Calculating a recommendation list for a user:
-
-  Finding a recoomendation list using CF.py in local environment:
+Finding a recoomendation list using CF.py in local environment:
 
 After running the model through the python command-line and the model finishes training the code will keep asking you to enter the
 user's id you want to find the top 5 recommenadtion list for a user and whenever it displays a user's list it will ask for the following
 user. 
 
 Example:
-
-
 
 -Example for Jupyter or Colab notebook:
 
