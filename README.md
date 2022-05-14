@@ -72,21 +72,22 @@ and access it in Google Colab.Then you can run the code normally in the Colab no
 
 
 
-Calculating a recommendation list for a user:
+**Calculating a recommendation list for a user**
 
--Finding a recoomendation list using CF.py in local environment:
+Using CF.py in local environment:
 
-After running the model through the python command-line and the model finishes training the code will keep asking you to enter the
-user's id you want to find the top 5 recommenadtion list for a user and whenever it displays a user's list it will ask for the following
-user. 
+- After running the model through the python command-line and the model finishes training the code will keep asking you to enter the
+  user's id you want to find the top 5 recommenadtion list for a user and whenever it displays a user's list it will ask for the following
+  user. 
 
 Example:
 
 
 
--Example for Jupyter or Colab notebook:
+Jupyter or Colab notebook:
 
-The last code cell in the notebook file when it is run it will ask you to enter the required user's id and it will provide
-with the top 5 recommendation list for the user. 
-
+- The last code cell in the notebook file when it is run it will ask you to enter the required user's id and it will provide
+  with the top 5 recommendation list for the user. 
+  
+Example:
 
