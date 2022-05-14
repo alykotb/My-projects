@@ -44,7 +44,7 @@ UserID::MovieID::Rating::Timestamp
 GET STARTED
 ===========
 
- -Run in python environment installed on a machine:
+ -Run in python environment installed on a machine
 
    If you are using a python environmnet running on your machine not google-colab these libraries should be installed:
 
