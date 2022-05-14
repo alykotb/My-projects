@@ -91,5 +91,5 @@ Jupyter or Colab notebook:
   
 Example:
 
-![This is an image](/alykotb/My-projects/capture.png)
+![This is an image](Capture.PNG)
 
