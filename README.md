@@ -44,9 +44,10 @@ UserID::MovieID::Rating::Timestamp
 GET STARTED
 ===========
 
--Run in python environment installed on a machine
+Run in python environment installed on a machine:
 
-   If you are using a python environmnet running on your machine not google-colab these libraries should be installed:
+
+   -If you are using a python environmnet running on your machine not these libraries should be installed (no installation needed in Google Colab):
 
      1-torch
      2-pandas
@@ -57,7 +58,7 @@ GET STARTED
      7-sklearn
 
 
-Example to run the codes locally in a command-line interpreter:
+-Example to run the codes locally in a command-line interpreter:
 
 Run CF.py to train the model:
 ```
