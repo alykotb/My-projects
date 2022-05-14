@@ -91,3 +91,5 @@ Jupyter or Colab notebook:
   
 Example:
 
+![This is an image](image.jpg)
+
