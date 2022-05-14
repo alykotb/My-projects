@@ -44,5 +44,5 @@ UserID::MovieID::Rating::Timestamp
 GET STARTED
 ===========
 
--Run in python environment installed on a machine:
+- Run in python environment installed on a machine:
 
