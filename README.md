@@ -46,15 +46,15 @@ GET STARTED
 
  -Run in python environment installed on a machine:
 
-If you are using a python environmnet running on your machine not google-colab these libraries should be installed:
+   If you are using a python environmnet running on your machine not google-colab these libraries should be installed:
 
- 1-torch
- 2-pandas
- 3-numpy
- 4-pytorch_lightning
- 5-torchmetrics
- 6-argparse
- 7-sklearn
+     1-torch
+     2-pandas
+     3-numpy
+     4-pytorch_lightning
+     5-torchmetrics
+     6-argparse
+     7-sklearn
 
 
 Example to run the codes locally in a command-line interpreter:
