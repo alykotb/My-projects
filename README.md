@@ -46,8 +46,7 @@ GET STARTED
 
 Run in python environment installed on a machine:
 
-
-   -If you are using a python environmnet running on your machine not these libraries should be installed (no installation needed in Google Colab):
+ -If you are using a python environmnet running on your machine not these libraries should be installed (no installation needed in Google Colab):
 
      1-torch
      2-pandas
