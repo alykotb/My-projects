@@ -60,7 +60,7 @@ Example to run the codes locally in a command-line interpreter:
 
 Run CF.py to train the model:
 ```
- python CF.py --dataset ml-1m --epochs 20 --batch_size 256 
+ python CF.py --epochs 20 --batch_size 256 
 ```
 
 **Run the jupyter notebook in Colab**
