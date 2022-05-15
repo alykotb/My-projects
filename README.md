@@ -63,7 +63,6 @@ Run CF.py to train the model:
  python CF.py --dataset ml-1m --epochs 20 --batch_size 256 
 ```
 
-
 **Run the jupyter notebook in Colab**
 
 This video - https://www.youtube.com/watch?v=hAvJN82ulg8 - explains how to upload your dataset file on your google drive
