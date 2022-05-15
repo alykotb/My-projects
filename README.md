@@ -81,6 +81,17 @@ Using CF.py in local environment:
 
 Example:
 
+```
+Enter the user's id:1
+Movies recommendation list:
+Movie's id:1649
+Movie's id:2190
+Movie's id:2613
+Movie's id:1226
+Movie's id:764
+Enter the user's id:2
+```
+
 
 
 Jupyter or Colab notebook:
