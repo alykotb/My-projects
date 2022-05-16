@@ -46,6 +46,7 @@ If you are using a python environmnet running on your machine not google-colab t
  5. torchmetrics 
  6. argparse
  7. sklearn
+ 8. random
 
 
 Example to run the codes locally in a command-line interpreter:
