@@ -31,7 +31,7 @@ UserID::MovieID::Rating::Timestamp
 - Ratings are made on a 5-star scale (whole-star ratings only)
 - Timestamp is represented in seconds since the epoch as returned by time(2)
 - Each user has at least 20 ratings
-
+The time-stamp column in our code is discarded from the datases as the model is based inly on users and movies' ids and the ratings interaction.
 
 GET STARTED
 ===========
