@@ -105,7 +105,7 @@ Jupyter or Colab notebook:
 
 Example:
 
-The last cell in the note-book is run to find the top-5 recommended movies for your inpus user:
+The last cell in the note-book is to find the top-5 recommended movies for your input user:
 ```
 user = input("Enter the user's id:")
 get_user_pred_list(int(user)-1)
