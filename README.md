@@ -37,7 +37,8 @@ GET STARTED
 ===========
 **Run in python environment installed on a machine**
 
-If you are using a python environmnet running on your machine not google-colab these libraries should be installed:
+If you are using a python environmnet running on your machine running the CF.py or CF.ipynb not in google-colab these libraries should be installed 
+in your environment:
 
  1. torch
  2. pandas
