@@ -68,9 +68,11 @@ Run CF.py to train the model:
 This video - https://www.youtube.com/watch?v=hAvJN82ulg8 - explains how to upload your dataset file on your google drive
 and access it in Google Colab.Then you can run the code normally in the Colab notebook.
 
-Example:
+
 You have to run all the cells in the notebook file. At the end there are two notebooks, the first one you will run and enter the required epochs
-and bath-size to train the model:
+and bath-size to train the model.
+
+Example:
 ```
 ep = input("Enter the epoch:")
 bs = input("Enter the batch-size:")
