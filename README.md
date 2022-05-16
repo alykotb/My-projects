@@ -56,7 +56,7 @@ Run CF.py to train the model:
  python CF.py --epochs 20 --batch_size 256 
 ```
 
-**Run the jupyter notebook in Colab**
+**Run the Jupyter notebook locally or use Google Colab**
 
 This video - https://www.youtube.com/watch?v=hAvJN82ulg8 - explains how to upload your dataset file on your google drive
 and access it in Google Colab.Then you can run the code normally in the Colab notebook.
@@ -67,7 +67,7 @@ and bath-size to train the model.
 
 Example:
 ```
-ep = input("Enter the epoch:")
+ep = input("Enter the number of epochs:")
 bs = input("Enter the batch-size:")
 
 model = CollaborativeFiltering(num_users, num_movies, train_users, train_movies, train_labels, int(bs))
