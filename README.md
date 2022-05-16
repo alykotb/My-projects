@@ -68,6 +68,17 @@ Run CF.py to train the model:
 This video - https://www.youtube.com/watch?v=hAvJN82ulg8 - explains how to upload your dataset file on your google drive
 and access it in Google Colab.Then you can run the code normally in the Colab notebook.
 
+Example:
+You have to run all the cells in the notebook file. At the end there are two notebooks, the first one you will run and enter the required epochs
+and bath-size to train the model:
+```
+ep = input("Enter the epoch:")
+bs = input("Enter the batch-size:")
+
+model = CollaborativeFiltering(num_users, num_movies, train_users, train_movies, train_labels, int(bs))
+trainer = pl.Trainer(max_epochs=int(ep))
+trainer.fit(model)
+```
 
 
 
@@ -96,10 +107,12 @@ Enter the user's id:2
 
 Jupyter or Colab notebook:
 
-- The last code cell in the notebook file when it is run it will ask you to enter the required user's id and it will provide
-  with the top 5 recommendation list for the user. 
-  
 Example:
 
-![This is an image](Capture.PNG)
+The last cell in the note-book is run to find the top-5 recommended movies for your inpus user:
+```
+user = input("Enter the user's id:")
+get_user_pred_list(int(user)-1)
+```
+
 
