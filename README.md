@@ -57,7 +57,7 @@ Run CF.py to train the model:
  python CF.py --epochs 20 --batch_size 256 
 ```
 
-**Run the Jupyter notebook locally or use Google Colab**
+**Running the Jupyter notebook locally or using Google Colab**
 
 This video - https://www.youtube.com/watch?v=hAvJN82ulg8 - explains how to upload your dataset file on your google drive
 and access it in Google Colab.Then you can run the code normally in the Colab notebook.
