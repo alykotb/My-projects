@@ -46,7 +46,7 @@ in your environment:
  8. random
 
 
-Example to run the codes locally in a command-line interpreter:
+Example to train the model and plot the loss locally in a command-line interpreter:
 
 Run CF.py to train the model:
 ```
@@ -60,16 +60,25 @@ and access it in Google Colab.Then you can run the code normally in the Colab no
 
 
 You have to run all the cells in the notebook file. At the end there are two notebooks, the first one you will run and enter the required epochs
-and bath-size to train the model.
+and bath-size to train the model and plot your loss.
 
 Example:
 ```
 ep = input("Enter the number of epochs:")
 bs = input("Enter the batch-size:")
+random.seed(0)
+np.random.seed(0)
+torch.manual_seed(0)
 
 model = CollaborativeFiltering(num_users, num_movies, train_users, train_movies, train_labels, int(bs))
+
+random.seed(0)
+np.random.seed(0)
+torch.manual_seed(0)
+
 trainer = pl.Trainer(max_epochs=int(ep))
 trainer.fit(model)
+plot(
 ```
 
 
