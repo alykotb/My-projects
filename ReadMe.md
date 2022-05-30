@@ -9,7 +9,7 @@ The detailed description is found in the paper's link mentioned above
 
 Terminology
 ============
-**Hits rate** is the percentage of the most relevant recommended items to users.
+**Hits rate** is the percentage of the most relevant items recommended to users.
 
 Dataset (MovieLens 100k) 
 =========================
