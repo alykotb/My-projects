@@ -34,7 +34,12 @@ GET STARTED
 You have to install the above mentioned libraries in your Jupyter Notebook's project.
 
 Run the second notebook cell to read the dataset's file whe running the code locally:
-
+```
+df = pd.DataFrame()
+path  = "u.data"
+df = pd.read_csv(path, sep="\t", header=None, names=['user_id','movie_id','rating','timestamp'])
+df.head()
+```
 
 **Running CORLP.ipynb using Google Colab**
 
@@ -46,7 +51,7 @@ Then, run the third notebook cell to read the dataset's file in Colab:
 df = pd.DataFrame()
 path  = "/content/drive/MyDrive/u.data"
 df = pd.read_csv(path, sep="\t", header=None, names=['user_id','movie_id','rating','timestamp'])
-df.head(3)
+df.head()
 ```
 
 **For both Colab and Jupyter Notebook**
