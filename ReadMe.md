@@ -6,6 +6,10 @@ For simplicity,the users-users and items-items are ignored in this approach, so 
 
 Detailed description is found in the paper's link mentioned above.
 
+Terminology
+============
+Hits rate is the percentage of the most relevant recommended items to users.
+
 Dataset (MovieLens 100k) 
 =========================
 
