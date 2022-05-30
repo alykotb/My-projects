@@ -4,6 +4,17 @@ This code is an implementation of the recommender systems approach presented in 
 
 For simplicity, the users-users and items-items are ignored in this approach, so these matrices are set to zeros. To predict a relationship (link-prediction) between a user and an item the matrix A is powered to an odd power (because the length of the paths between a user and an item is always odd), and the resulting powered matrix from the users-items part(matrix) predicts a like or a dislike by a user to an item, where the path length between the user and the item is the value of the odd power. So, the power depends on the path's length you want to get information for. The hits rate and couverage (in this code we calculate hits rate only) is calculated to evaluate the performance of the prediction algorithm when changing the power and the number of top items (N-top) in the recommendation list.
 
+An example for the adajancyc matrix:
+ [ 0.+0.j  0.+0.j  0.+0.j  0.+1.j -0.-1.j  0.+1.j  0.+0.j  0.+0.j  0.+0.j]
+ [ 0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+1.j -0.-1.j  0.+1.j  0.+0.j  0.+0.j]
+ [ 0.+0.j  0.+0.j  0.+0.j  0.+1.j  0.+0.j  0.+1.j  0.+0.j  0.+1.j -0.-1.j]
+ [-0.-1.j -0.-0.j -0.-1.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j]
+ [-0.+1.j -0.-1.j -0.-0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j]
+ [-0.-1.j -0.+1.j -0.-1.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j]
+ [-0.-0.j -0.-1.j -0.-0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j]
+ [-0.-0.j -0.-0.j -0.-1.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j]
+ [-0.-0.j -0.-0.j -0.+1.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j]
+
 The detailed description is found in the paper's link.
 
 
