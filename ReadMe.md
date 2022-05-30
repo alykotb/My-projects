@@ -56,7 +56,7 @@ df.head()
 
 **For both Colab and Jupyter Notebook**
 
-Beside running the cell of reading the datasetfile base od your platform, run all of the notebook's cells.
+Beside running the cell of reading the dataset file base on your platform, run all of the notebook's cells.
 
 In the last cell of the notebook enter the path-length and the top-N list's length to get the hits rate corresponding to them:
 ```
