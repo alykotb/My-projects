@@ -22,14 +22,23 @@ In our code, we dropped the timestamp data as we need only the interactions betw
 
 GET STARTED
 ===========
-**Run in python environment installed on a machine**
 
-Libraries required to run the code: 
-
+**Libraries required to run the code** 
  1. pandas
  2. numpy
- 3. argparse (for CF.py only)
- 4. sklearn
- 5. random
+ 3. sklearn
+ 4. random
+
+**Run the notebook, CORLP.ipynb in a local python environment using Jupyter Notebook**
+
+You have to install the above mentioned libraries in your Jupyter Notebook's project.
+
+Run the second notebook cell to read the dataset's file whe running the code locally.
+
+
+**Running CORLP.ipynb using Google Colab**
+Run the third notebook cell to read the dataset's file whe running the code locally.
+
+For both Colab and 
 
 
