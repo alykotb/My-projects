@@ -56,4 +56,14 @@ df.head()
 
 **For both Colab and Jupyter Notebook**
 
+Beside running the cell of reading the datasetfile base od your platform, run all of the notebook's cells.
+
+In the last cell of the notebook enter the path-length and the top-N list's length to get the hits rate corresponding to them:
+```
+path_length = input("Enter the path length:")
+n = input("Enter the length of top-N items:")
+Evaluate_Model(int(n), int(path_length)
+```
+
+
 
