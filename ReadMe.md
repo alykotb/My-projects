@@ -7,13 +7,21 @@ For simplicity, the users-users and items-items are ignored in this approach, so
 An example for the adajancyc matrix:
 
  [ 0.+0.j  0.+0.j  0.+0.j  0.+1.j -0.-1.j  0.+1.j  0.+0.j  0.+0.j  0.+0.j]
+ 
  [ 0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+1.j -0.-1.j  0.+1.j  0.+0.j  0.+0.j]
+ 
  [ 0.+0.j  0.+0.j  0.+0.j  0.+1.j  0.+0.j  0.+1.j  0.+0.j  0.+1.j -0.-1.j]
+ 
  [-0.-1.j -0.-0.j -0.-1.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j]
+ 
  [-0.+1.j -0.-1.j -0.-0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j]
+ 
  [-0.-1.j -0.+1.j -0.-1.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j]
+ 
  [-0.-0.j -0.-1.j -0.-0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j]
+ 
  [-0.-0.j -0.-0.j -0.-1.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j]
+ 
  [-0.-0.j -0.-0.j -0.+1.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j  0.+0.j]
 
 The detailed description is found in the paper's link.
