@@ -37,8 +37,10 @@ Run the second notebook cell to read the dataset's file whe running the code loc
 
 
 **Running CORLP.ipynb using Google Colab**
+
 This video - https://www.youtube.com/watch?v=hAvJN82ulg8 - explains how to upload your dataset file on your google drive
 and access it in Google Colab. 
+
 Then, run the third notebook cell to read the dataset's file in Colab:
 ```
 df = pd.DataFrame()
