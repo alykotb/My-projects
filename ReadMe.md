@@ -33,7 +33,7 @@ GET STARTED
 
 You have to install the above mentioned libraries in your Jupyter Notebook's project.
 
-Run the second notebook cell to read the dataset's file whe running the code locally:
+Run the second notebook's cell to read the dataset's file whe running the code locally:
 ```
 df = pd.DataFrame()
 path  = "u.data"
@@ -46,7 +46,7 @@ df.head()
 This video - https://www.youtube.com/watch?v=hAvJN82ulg8 - explains how to upload your dataset file on your google drive
 and access it in Google Colab. 
 
-Run the third notebook cell to read the dataset's file in Colab:
+Run the third notebook's cell to read the dataset's file in Colab:
 ```
 df = pd.DataFrame()
 path  = "/content/drive/MyDrive/u.data"
