@@ -13,13 +13,12 @@ Hits rate is the percentage of the most relevant recommended items to users.
 
 Dataset (MovieLens 100k) 
 =========================
+MovieLens 100k dataset was collected through the MovieLens website (movielens.umn.edu) during the seven-month period from September 19th, 1997 through April 22nd, 1998. Each user has at least 20 ratings in this dataset. The ratings in this data set are on a 1-5 scale.
 
-MovieLens 100k dataset was collected through the MovieLens web site (movielens.umn.edu) during the seven-month period from September 19th, 1997 through April 22nd, 1998. Each user has at least 20 ratings in this dataset. The ratings in this data set are on a 1-5 scale. 
+u.data is a dataset of 100000 ratings by 943 users on 1682 items and the ratings are randomly ordered. Users and items are numbered consecutively from 1. This is a tab-separated list of user id | item id | rating | timestamp. The timestamps are Unix seconds since 1/1/1970 UTC.
 
-u.data, is a dataset of 100000 ratings by 943 users on 1682 items and the ratings are randomly oredered. Users and items are numbered consecutively from 1. 
-This is a tab separated list of user id | item id | rating | timestamp. The time stamps are unix seconds since 1/1/1970 UTC.
+In our code, we dropped the timestamp data as we need only the interactions between users and items, as well as the ids of both.
 
-In our code we dropped the timestamp data as we need only the interactions between users and items, as well as the ids of both.
 
 GET STARTED
 ===========
