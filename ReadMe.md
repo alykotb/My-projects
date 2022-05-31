@@ -16,7 +16,7 @@ value of the odd power. So, the power depends on the path's length you want to g
 -rate only) is calculated to evaluate the performance of the prediction algorithm when changing the power and the number of top items (N-top) in the recommendation list.
 
 When finding out the top-N recommendations of the users we recommend the items that were not rated previously by the user, the idea of the piece of code
-that does that operation (excluding previously rated items by a user) is taken from a github code, https://github.com/SadeBros/CORLP/blob/master/RS_Code.ipynb 
+that does this operation (excluding previously rated items by a user) is taken from a github code, https://github.com/SadeBros/CORLP/blob/master/RS_Code.ipynb 
 which is an implementation of this paper. 
 
 The detailed description is found in the paper's link.
@@ -37,7 +37,6 @@ In our code, we dropped the timestamp data as we need only the interactions betw
 
 GET STARTED
 ===========
-
 **Libraries required to run the code** 
  1. pandas
  2. numpy
