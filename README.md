@@ -1,85 +1,80 @@
+Complex Representation-Based Link Prediction (Users and Items Adjacency Matrix)
+===============================================================================
+This code is an implementation of the recommender systems approach presented in the paper, [A link prediction approach for item recommendation with 
+complex numbers](https://www.sciencedirect.com/science/article/pii/S0950705115000568). Briefly, the idea of this approach is based on converting the
+directed graph representing interactions between users and items in a rating dataset, the similarities within items, and the similarities within users
+into an adjacency matrix (A). Where the interactions between users and items are represented using complex numbers, the like interaction is represented 
+as J while the dislike is represented as -J. While a relationship between a user and another user is represented as 1 for being similar while -1 for dissimilar. 
+And the same representation is applied between one item and another. Then we come out with a matrix consisting of 4 parts (matrices) concatenated together. 
+We have the users-users similarity matrix, the users-items interaction matrix, the items-items similarity matrix, and the items-users similarity one which is 
+the negative transpose of the users-items matrix.
+
+For simplicity, the users-users and items-items are ignored in this approach, so these matrices are set to zeros. To predict a relationship (link-prediction)
+ between a user and an item the matrix A is powered to an odd power (because the length of the paths between a user and an item is always odd), and the resulting
+ powered matrix from the users-items part(matrix) predicts a like or a dislike by a user to an item, where the path length between the user and the item is the 
+value of the odd power. So, the power depends on the path's length you want to get information for. The hits rate and couverage (in this code we calculate hits 
+-rate only) is calculated to evaluate the performance of the prediction algorithm when changing the power and the number of top items (N-top) in the recommendation list.
+
+When finding out the top-N recommendations of the users we recommend the items that were not rated previously by the user, the idea of the piece of code
+that does this operation (excluding previously rated items by a user) is taken from a github code, https://github.com/SadeBros/CORLP/blob/master/RS_Code.ipynb 
+which is an implementation of this paper. 
+
+The detailed description is found in the paper's link.
+
+Terminology
+============
+**Hits rate** is the percentage of the most relevant items recommended to users.
+
+Dataset (MovieLens 100k) 
+=========================
+MovieLens 100k dataset was collected through the MovieLens website (movielens.umn.edu) during the seven-month period from September 19th, 
+1997 through April 22nd, 1998. Each user has at least 20 ratings in this dataset. The ratings in this data set are on a 1-5 scale.
+
+u.data is a dataset of 100000 ratings by 943 users on 1682 items and the ratings are randomly ordered. Users and items are numbered consecutively from 1. 
+This is a tab-separated list of user id | item id | rating | timestamp. The timestamps are Unix seconds since 1/1/1970 UTC.
+
+In our code, we dropped the timestamp data as we need only the interactions between users and items, as well as the ids of both.
 
 GET STARTED
 ===========
-**Run in python environment installed on a machine**
+**Libraries required to run the code** 
+ 1. pandas
+ 2. numpy
+ 3. sklearn
+ 4. random
 
-If you are using a python environmnet running on your machine running the CF.py or CF.ipynb not in google-colab these libraries should be installed 
-in your environment:
+**Run the notebook, CORLP.ipynb in a local python environment using Jupyter Notebook**
 
- 1. torch
- 2. pandas
- 3. numpy
- 4. pytorch_lightning
- 5. torchmetrics 
- 6. argparse (for CF.py only)
- 7. sklearn
- 8. random
+You have to install the above mentioned libraries in your Jupyter Notebook's project.
 
-
-Example to train the model and plot the loss locally in a command-line interpreter:
-
-Run CF.py to train the model:
+Run the second notebook's cell to read the dataset's file when running the code locally:
 ```
- python CF.py --epochs 20 --batch_size 256 
+df = pd.DataFrame()
+path  = "u.data"
+df = pd.read_csv(path, sep="\t", header=None, names=['user_id','movie_id','rating','timestamp'])
+df.head()
 ```
 
-**Running the Jupyter notebook locally or using Google Colab**
+**Running CORLP.ipynb using Google Colab**
 
 This video - https://www.youtube.com/watch?v=hAvJN82ulg8 - explains how to upload your dataset file on your google drive
-and access it in Google Colab.Then you can run the code normally in the Colab notebook.
+and access it in Google Colab. 
 
-
-You have to run all the cells in the notebook file. At the end there are two notebooks, the first one you will run and enter the required epochs
-and bath-size to train the model and plot your loss.
-
-Note-book for model-training:
+Run the third notebook's cell to read the dataset's file in Colab:
 ```
-ep = input("Enter the number of epochs:")
-bs = input("Enter the batch-size:")
-random.seed(0)
-np.random.seed(0)
-torch.manual_seed(0)
-
-model = CollaborativeFiltering(num_users, num_movies, train_users, train_movies, train_labels, int(bs))
-
-random.seed(0)
-np.random.seed(0)
-torch.manual_seed(0)
-
-trainer = pl.Trainer(max_epochs=int(ep))
-trainer.fit(model)
-plot
+df = pd.DataFrame()
+path  = "/content/drive/MyDrive/u.data"
+df = pd.read_csv(path, sep="\t", header=None, names=['user_id','movie_id','rating','timestamp'])
+df.head()
 ```
 
+**For both Colab and Jupyter Notebook**
 
+Beside running the cell of reading the dataset file base on your platform, run all of the notebook's cells.
 
-**Calculating a recommendation list for a user**
-
-Using CF.py in local environment:
-
-- After running the model through the python command-line and the model finishes training the code will keep asking you to enter the
-  user's id you want to find the top 5 recommenadtion list for a user and whenever it displays a user's list it will ask for the following
-  user. 
-
-Example:
-
+In the last cell of the notebook enter the path-length and the top-N list's length to get the hits rate corresponding to them:
 ```
-Enter the user's id:1
-Movies recommendation list:
-Movie's id:1649
-Movie's id:2190
-Movie's id:2613
-Movie's id:1226
-Movie's id:764
-Enter the user's id:2
-```
-
-
-
-Jupyter or Colab notebook:
-
-The last cell in the note-book is to find the top-5 recommended movies for your input user:
-```
-user = input("Enter the user's id:")
-get_user_pred_list(int(user)-1)
+path_length = input("Enter the path length:")
+n = input("Enter the length of top-N items:")
+Evaluate_Model(int(n), int(path_length)
 ```
